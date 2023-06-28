@@ -379,11 +379,12 @@ namespace ApiSdk.DeviceManagement {
             return command;
         }
         /// <summary>
-        /// Get deviceManagement
+        /// Read properties and relationships of the deviceManagement object.
+        /// Find more info here <see href="https://docs.microsoft.com/graph/api/intune-reporting-devicemanagement-get?view=graph-rest-1.0" />
         /// </summary>
         public Command BuildGetCommand() {
             var command = new Command("get");
-            command.Description = "Get deviceManagement";
+            command.Description = "Read properties and relationships of the deviceManagement object.\n\nFind more info here:\n  https://docs.microsoft.com/graph/api/intune-reporting-devicemanagement-get?view=graph-rest-1.0";
             var selectOption = new Option<string[]>("--select", description: "Select properties to be returned") {
                 Arity = ArgumentArity.ZeroOrMore
             };
@@ -590,11 +591,12 @@ namespace ApiSdk.DeviceManagement {
             return command;
         }
         /// <summary>
-        /// Update deviceManagement
+        /// Update the properties of a deviceManagement object.
+        /// Find more info here <see href="https://docs.microsoft.com/graph/api/intune-wip-devicemanagement-update?view=graph-rest-1.0" />
         /// </summary>
         public Command BuildPatchCommand() {
             var command = new Command("patch");
-            command.Description = "Update deviceManagement";
+            command.Description = "Update the properties of a deviceManagement object.\n\nFind more info here:\n  https://docs.microsoft.com/graph/api/intune-wip-devicemanagement-update?view=graph-rest-1.0";
             var bodyOption = new Option<string>("--body", description: "The request body") {
             };
             bodyOption.IsRequired = true;
@@ -968,7 +970,7 @@ namespace ApiSdk.DeviceManagement {
         public DeviceManagementRequestBuilder(Dictionary<string, object> pathParameters) : base("{+baseurl}/deviceManagement{?%24select,%24expand}", pathParameters) {
         }
         /// <summary>
-        /// Get deviceManagement
+        /// Read properties and relationships of the deviceManagement object.
         /// </summary>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -994,7 +996,7 @@ namespace ApiSdk.DeviceManagement {
             return requestInfo;
         }
         /// <summary>
-        /// Update deviceManagement
+        /// Update the properties of a deviceManagement object.
         /// </summary>
         /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -1022,7 +1024,7 @@ namespace ApiSdk.DeviceManagement {
             return requestInfo;
         }
         /// <summary>
-        /// Get deviceManagement
+        /// Read properties and relationships of the deviceManagement object.
         /// </summary>
         public class DeviceManagementRequestBuilderGetQueryParameters {
             /// <summary>Expand related entities</summary>

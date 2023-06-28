@@ -67,11 +67,12 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return command;
         }
         /// <summary>
-        /// Delete navigation property deviceConfigurations for deviceManagement
+        /// Deletes a windowsPhone81CustomConfiguration.
+        /// Find more info here <see href="https://docs.microsoft.com/graph/api/intune-deviceconfig-windowsphone81customconfiguration-delete?view=graph-rest-1.0" />
         /// </summary>
         public Command BuildDeleteCommand() {
             var command = new Command("delete");
-            command.Description = "Delete navigation property deviceConfigurations for deviceManagement";
+            command.Description = "Deletes a windowsPhone81CustomConfiguration.\n\nFind more info here:\n  https://docs.microsoft.com/graph/api/intune-deviceconfig-windowsphone81customconfiguration-delete?view=graph-rest-1.0";
             var deviceConfigurationIdOption = new Option<string>("--device-configuration-id", description: "The unique identifier of deviceConfiguration") {
             };
             deviceConfigurationIdOption.IsRequired = true;
@@ -167,11 +168,12 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return command;
         }
         /// <summary>
-        /// The device configurations.
+        /// Read properties and relationships of the iosUpdateConfiguration object.
+        /// Find more info here <see href="https://docs.microsoft.com/graph/api/intune-deviceconfig-iosupdateconfiguration-get?view=graph-rest-1.0" />
         /// </summary>
         public Command BuildGetCommand() {
             var command = new Command("get");
-            command.Description = "The device configurations.";
+            command.Description = "Read properties and relationships of the iosUpdateConfiguration object.\n\nFind more info here:\n  https://docs.microsoft.com/graph/api/intune-deviceconfig-iosupdateconfiguration-get?view=graph-rest-1.0";
             var deviceConfigurationIdOption = new Option<string>("--device-configuration-id", description: "The unique identifier of deviceConfiguration") {
             };
             deviceConfigurationIdOption.IsRequired = true;
@@ -243,11 +245,12 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return command;
         }
         /// <summary>
-        /// Update the navigation property deviceConfigurations in deviceManagement
+        /// Update the properties of a windowsPhone81CustomConfiguration object.
+        /// Find more info here <see href="https://docs.microsoft.com/graph/api/intune-deviceconfig-windowsphone81customconfiguration-update?view=graph-rest-1.0" />
         /// </summary>
         public Command BuildPatchCommand() {
             var command = new Command("patch");
-            command.Description = "Update the navigation property deviceConfigurations in deviceManagement";
+            command.Description = "Update the properties of a windowsPhone81CustomConfiguration object.\n\nFind more info here:\n  https://docs.microsoft.com/graph/api/intune-deviceconfig-windowsphone81customconfiguration-update?view=graph-rest-1.0";
             var deviceConfigurationIdOption = new Option<string>("--device-configuration-id", description: "The unique identifier of deviceConfiguration") {
             };
             deviceConfigurationIdOption.IsRequired = true;
@@ -348,7 +351,7 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
         public DeviceConfigurationItemRequestBuilder(Dictionary<string, object> pathParameters) : base("{+baseurl}/deviceManagement/deviceConfigurations/{deviceConfiguration%2Did}{?%24select,%24expand}", pathParameters) {
         }
         /// <summary>
-        /// Delete navigation property deviceConfigurations for deviceManagement
+        /// Deletes a windowsPhone81CustomConfiguration.
         /// </summary>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -373,7 +376,7 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return requestInfo;
         }
         /// <summary>
-        /// The device configurations.
+        /// Read properties and relationships of the iosUpdateConfiguration object.
         /// </summary>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -399,7 +402,7 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return requestInfo;
         }
         /// <summary>
-        /// Update the navigation property deviceConfigurations in deviceManagement
+        /// Update the properties of a windowsPhone81CustomConfiguration object.
         /// </summary>
         /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -427,7 +430,7 @@ namespace ApiSdk.DeviceManagement.DeviceConfigurations.Item {
             return requestInfo;
         }
         /// <summary>
-        /// The device configurations.
+        /// Read properties and relationships of the iosUpdateConfiguration object.
         /// </summary>
         public class DeviceConfigurationItemRequestBuilderGetQueryParameters {
             /// <summary>Expand related entities</summary>

@@ -1052,6 +1052,7 @@ namespace ApiSdk {
             nonExecCommands.Add(builder.BuildAppConsentNavCommand());
             nonExecCommands.Add(builder.BuildEntitlementManagementNavCommand());
             execCommands.Add(builder.BuildGetCommand());
+            nonExecCommands.Add(builder.BuildLifecycleWorkflowsNavCommand());
             execCommands.Add(builder.BuildPatchCommand());
             nonExecCommands.Add(builder.BuildTermsOfUseNavCommand());
             foreach (var cmd in execCommands)
@@ -1306,6 +1307,7 @@ namespace ApiSdk {
             var builder = new PlacesRequestBuilder(PathParameters);
             var nonExecCommands = new List<Command>();
             nonExecCommands.Add(builder.BuildCountNavCommand());
+            nonExecCommands.Add(builder.BuildGraphRoomListNavCommand());
             nonExecCommands.Add(builder.BuildGraphRoomNavCommand());
             var cmds = builder.BuildCommand();
             nonExecCommands.AddRange(cmds.Item2);
@@ -1437,6 +1439,7 @@ namespace ApiSdk {
             var builder = new ReportsRequestBuilder(PathParameters);
             var execCommands = new List<Command>();
             var nonExecCommands = new List<Command>();
+            nonExecCommands.Add(builder.BuildAuthenticationMethodsNavCommand());
             nonExecCommands.Add(builder.BuildDailyPrintUsageByPrinterNavCommand());
             nonExecCommands.Add(builder.BuildDailyPrintUsageByUserNavCommand());
             nonExecCommands.Add(builder.BuildDeviceConfigurationDeviceActivityNavCommand());
@@ -1745,6 +1748,7 @@ namespace ApiSdk {
             execCommands.Add(builder.BuildPatchCommand());
             nonExecCommands.Add(builder.BuildSecureScoreControlProfilesNavCommand());
             nonExecCommands.Add(builder.BuildSecureScoresNavCommand());
+            nonExecCommands.Add(builder.BuildThreatIntelligenceNavCommand());
             nonExecCommands.Add(builder.BuildTriggersNavCommand());
             nonExecCommands.Add(builder.BuildTriggerTypesNavCommand());
             foreach (var cmd in execCommands)

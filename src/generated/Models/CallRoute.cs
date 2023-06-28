@@ -34,7 +34,7 @@ namespace ApiSdk.Models {
         /// <summary>The routingType property</summary>
         public ApiSdk.Models.RoutingType? RoutingType { get; set; }
         /// <summary>
-        /// Instantiates a new callRoute and sets the default values.
+        /// Instantiates a new CallRoute and sets the default values.
         /// </summary>
         public CallRoute() {
             AdditionalData = new Dictionary<string, object>();

@@ -42,7 +42,7 @@ namespace ApiSdk.Models.ExternalConnectors {
         public List<PropertyRule> Rules { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new displayTemplate and sets the default values.
+        /// Instantiates a new DisplayTemplate and sets the default values.
         /// </summary>
         public DisplayTemplate() {
             AdditionalData = new Dictionary<string, object>();

@@ -58,7 +58,7 @@ namespace ApiSdk.Models {
         public string UserPrincipalName { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new targetResource and sets the default values.
+        /// Instantiates a new TargetResource and sets the default values.
         /// </summary>
         public TargetResource() {
             AdditionalData = new Dictionary<string, object>();

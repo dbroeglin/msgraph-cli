@@ -32,7 +32,7 @@ namespace ApiSdk.Models {
         public string To { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new bucketAggregationRange and sets the default values.
+        /// Instantiates a new BucketAggregationRange and sets the default values.
         /// </summary>
         public BucketAggregationRange() {
             AdditionalData = new Dictionary<string, object>();

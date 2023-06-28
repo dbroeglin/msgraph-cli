@@ -43,7 +43,7 @@ namespace ApiSdk.Models {
         public string OldValue { get; set; }
 #endif
         /// <summary>
-        /// Instantiates a new auditProperty and sets the default values.
+        /// Instantiates a new AuditProperty and sets the default values.
         /// </summary>
         public AuditProperty() {
             AdditionalData = new Dictionary<string, object>();
